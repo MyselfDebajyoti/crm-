@@ -45,24 +45,24 @@ export function Sidebar({ sidebarOpen, setSidebarOpen }: SidebarProps) {
   // Define navigation based on user role
   const getNavigation = (): NavigationItem[] => {
     const commonNavItems: NavigationItem[] = [
-      { name: "Dashboard", href: "/", icon: Home },
-      { name: "Tasks", href: "/tasks", icon: CheckSquare },
-      { name: "Calendar", href: "/calendar", icon: Calendar },
+      { name: "Dashboard", href: "/bussiness-head/", icon: Home },
+      { name: "Tasks", href: "/bussiness-head/tasks", icon: CheckSquare },
+      { name: "Calendar", href: "/bussiness-head/calendar", icon: Calendar },
     ]
 
     // Business head specific navigation
     if (userRole === "business_head") {
       return [
         ...commonNavItems,
-        { name: "RM Heads", href: "/rm-heads", icon: UserCheck },
-        { name: "Leads", href: "/leads", icon: Users },
-        { name: "Clients", href: "/clients", icon: Building2 },
-        { name: "Services", href: "/services", icon: Briefcase },
-        { name: "Investments", href: "/investments", icon: BarChart3 },
-        { name: "Analytics", href: "/analytics", icon: TrendingUp },
-        { name: "Export", href: "/export", icon: Download },
-        { name: "Notifications", href: "/notifications", icon: Bell, badge: unreadNotifications },
-        { name: "Settings", href: "/settings", icon: Settings },
+        { name: "RM Heads", href: "/bussiness-head/rm-heads", icon: UserCheck },
+        { name: "Leads", href: "/bussiness-head/leads", icon: Users },
+        { name: "Clients", href: "/bussiness-head/clients", icon: Building2 },
+        { name: "Services", href: "/bussiness-head/services", icon: Briefcase },
+        { name: "Investments", href: "/bussiness-head/investments", icon: BarChart3 },
+        { name: "Analytics", href: "/bussiness-head/analytics", icon: TrendingUp },
+        { name: "Export", href: "/bussiness-head/export", icon: Download },
+        { name: "Notifications", href: "/bussiness-head/notifications", icon: Bell, badge: unreadNotifications },
+        { name: "Settings", href: "/bussiness-head/settings", icon: Settings },
       ]
     }
 

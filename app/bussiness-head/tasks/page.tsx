@@ -1,15 +1,15 @@
 "use client"
 
 import { useState } from "react"
-import { Sidebar } from "@/components/layout/sidebar"
-import { Header } from "@/components/layout/header"
-import { DataTable } from "@/components/ui/data-table"
-import { useCRM, type Task } from "@/components/crm-provider"
+import { Sidebar } from "../components/layout/sidebar"
+import { Header } from "../components/layout/header"
+import { DataTable } from "../components/ui/data-table"
+import { useCRM, type Task } from "../components/crm-provider"
 import { Button } from "@/components/ui/button"
 import { Badge } from "@/components/ui/badge"
 import { Avatar, AvatarFallback } from "@/components/ui/avatar"
 import { Plus } from "lucide-react"
-import { TaskForm } from "@/components/forms/task-form"
+import { TaskForm } from "../components/forms/task-form"
 
 export default function TasksPage() {
   const [sidebarOpen, setSidebarOpen] = useState(false)

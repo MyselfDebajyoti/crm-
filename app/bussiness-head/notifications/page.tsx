@@ -1,9 +1,9 @@
 "use client"
 
 import { useState } from "react"
-import { Sidebar } from "@/components/layout/sidebar"
-import { Header } from "@/components/layout/header"
-import { useCRM, type Notification } from "@/components/crm-provider"
+import { Sidebar } from "../components/layout/sidebar"
+import { Header } from "../components/layout/header"
+import { useCRM, type Notification } from "../components/crm-provider"
 import { Button } from "@/components/ui/button"
 import { Badge } from "@/components/ui/badge"
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card"

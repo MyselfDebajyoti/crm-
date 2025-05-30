@@ -9,6 +9,7 @@ import {
   Briefcase,
   BarChart3,
   LogOut,
+  Calendar,
 } from "lucide-react";
 import Link from "next/link";
 import {
@@ -268,9 +269,24 @@ export default function Dashboard() {
             href=" /debajyoti/calender"
             className="flex items-center gap-3 px-10 py-2.5 rounded-lg text-gray-700 hover:bg-gray-100 text-xs font-helvetica-light"
           >
-            <BarChart3 size={16} />
+            <Calendar size={16} />
             Calender
           </Link>
+          
+          {/* <Link
+            href=" /debajyoti/analytics"
+            className="flex items-center gap-3 px-10 py-2.5 rounded-lg text-gray-700 hover:bg-gray-100 text-xs font-helvetica-light"
+          >
+            < TrendingUp size={16} />
+            Analytics
+          </Link>
+          <Link
+            href=" /debajyoti/export"
+            className="flex items-center gap-3 px-10 py-2.5 rounded-lg text-gray-700 hover:bg-gray-100 text-xs font-helvetica-light"
+          >
+            <Download size={16} />
+            Export
+          </Link> */}
         </nav>
 
         {/* Logout */}

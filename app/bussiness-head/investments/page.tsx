@@ -1,14 +1,14 @@
 "use client"
 
 import { useState } from "react"
-import { Sidebar } from "@/components/layout/sidebar"
-import { Header } from "@/components/layout/header"
-import { DataTable } from "@/components/ui/data-table"
-import { useCRM, type Investment } from "@/components/crm-provider"
+import { Sidebar } from "../components/layout/sidebar"
+import { Header } from "../components/layout/header"
+import { DataTable } from "../components/ui/data-table"
+import { useCRM, type Investment } from "../components/crm-provider"
 import { Button } from "@/components/ui/button"
 import { Badge } from "@/components/ui/badge"
 import { Plus, TrendingUp, TrendingDown } from "lucide-react"
-import { InvestmentForm } from "@/components/forms/investment-form"
+import { InvestmentForm } from "../components/forms/investment-form"
 
 export default function InvestmentsPage() {
   const [sidebarOpen, setSidebarOpen] = useState(false)

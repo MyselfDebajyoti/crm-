@@ -1,9 +1,9 @@
 "use client"
 
 import { useState } from "react"
-import { Sidebar } from "@/components/layout/sidebar"
-import { Header } from "@/components/layout/header"
-import { DataExport } from "@/components/export/data-export"
+import { Sidebar } from "../components/layout/sidebar"
+import { Header } from "../components/layout/header"
+import { DataExport } from "../components/export/data-export"
 
 export default function ExportPage() {
   const [sidebarOpen, setSidebarOpen] = useState(false)
